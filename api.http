@@ -1,0 +1,30 @@
+# Get all books
+GET http://localhost:3001/machines HTTP/1.1
+Content-Type: application/json
+
+###
+
+# Create a machine
+POST http://localhost:3001/oee HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "car 1"
+}
+
+###
+
+# Update a book
+PUT http://localhost:3001/oee/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings: The Fellowship of the Ring"
+}
+
+###
+
+# Delete a book
+DELETE http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+

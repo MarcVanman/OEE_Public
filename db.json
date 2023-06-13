@@ -1,0 +1,24 @@
+{
+  "machines": [
+    {
+      "name": "Car 1",
+      "imageUrl": "https://media.wired.com/photos/63b8d0a771c6b526845f15a6/16:9/w_2400,h_1350,c_limit/CES-2023-PEUGEOT_INCEPTION_CONCEPT_2301CN202.jpg",
+      "id": 1
+    },
+    {
+      "name": "Car 2",
+      "imageUrl": "https://cdn.jdpower.com/what%20is%20the%20most%20expensive%20car%20in%20the%20world.jpg",
+      "id": 2
+    },
+    {
+      "name": "Car 3",
+      "imageUrl": "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/hero-banner/2022/11_30_sterrato/gate_models_og_01.jpg",
+      "id": 3
+    },
+    {
+      "name": "Car 4",
+      "imageUrl": "https://www.highreshdwallpapers.com/wp-content/uploads/2014/12/Sleek-Red-Sports-Car-Wallpaper.jpg",
+      "id": 4
+    }
+  ]
+}

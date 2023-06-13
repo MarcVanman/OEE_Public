@@ -1,0 +1,219 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard {
+  width: 70vw;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-box {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  padding: 1.25vw;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 19.3vw;
+  transform: translateY(-50%);
+}
+
+.individual-filter-box {
+  margin-bottom: 2vh;
+}
+
+.dashboard h1 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  margin-bottom: 1.25vw;
+}
+
+.dashboard p {
+  font-size: 1vw;
+  line-height: 1.5;
+  color: #333;
+}
+
+.metric-box-side-by-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.metric-box {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3.9vw;
+  padding-right: 3.9vw;
+}
+
+.bottom-margin-4 {
+  margin-bottom: 4vh;
+}
+
+.bottom-margin-2 {
+  margin-bottom: 2vh;
+}
+
+.metric-title {
+  font-size: 2vmin;
+  font-weight: bold;
+  margin-bottom: 0.5vw;
+}
+
+.metric-subtitle {
+  font-size: 1.3vmin;
+  font-weight: bold;
+  color: #727272;
+}
+
+.metric-number {
+  font-size: 1.75vmin;
+  font-weight: bold;
+  color: #727272;
+}
+
+.termor-elem {
+  font-size: 1.5vmin !important;
+}
+
+.text-gray-700.font-medium {
+  font-size: 1.3vmin !important;
+}
+
+.text-gray-500.font-normal {
+  font-size: 1.3vmin !important;
+}
+
+.text-gray-400.font-medium {
+  font-size: 1.3vmin !important;
+}
+
+.tremor-ListItem-root {
+  font-size: 1.3vmin !important;
+}
+
+.tremor-ListItem-root span {
+  font-size: 1.3vmin !important;
+}
+
+.container-row-center-30vh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-column-center-25vh {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+  margin-top: 3vh;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  color: #721c24;
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.dashboard-container-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.dashboard-container-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.chart-container:last-child {
+  width: 100%;
+}
+
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  height: 100%;
+}
+
+.list-full-height {
+  display: flex;
+  flex-direction: column;
+  height: 28vh;
+  overflow-y: auto;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey; /* this adds a light grey line */
+}
+
+.list-item span {
+  font-size: 1.3vmin !important;
+  color: rgb(147, 147, 147); /* this changes the font color to light grey */
+}
+
+
+
+
+
+.tab-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.tab-item {
+  cursor: pointer;
+  color: #333;
+  border-bottom: 2px solid rgb(237, 237, 237);
+}
+
+.tab-item.active-tab {
+  border-bottom: 2px solid rgb(59 130 246);
+  /* This is to hide the border-bottom when the tab is active */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .dashboard h1 {
+    font-size: 3vw;
+  }
+
+  .dashboard p {
+    font-size: 2vw;
+  }
+
+  .metric-box {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}

@@ -1,0 +1,569 @@
+.primaryModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 75vh;
+  /* changed from 800px */
+  width: 70vw;
+  /* changed from 1250px */
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subModal {
+  background-color: rgb(236, 236, 236);
+}
+
+.registerTimeModal {
+  height: 80vh;
+  width: 90vw;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.registerTimeModal.no-scroll {
+  overflow-y: hidden !important;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-height: 80vh;
+  padding-right: 20px;
+  /* Optional: Adds some space to the right of the content to prevent the scrollbar from overlapping */
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.primary_modal_header {
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 3vmin;
+  margin-bottom: 2vh;
+  color: #000000;
+
+}
+
+.primary_modal_exit_button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 2.2vmin;
+  color: #7b7b7b;
+  cursor: pointer;
+  margin: 10px;
+  user-select: none;
+}
+
+.primary_modal_exit_button:hover {
+  color: #000;
+
+}
+
+.primary_modal_delete_button {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  font-size: 2.2vmin;
+  top: 1px;
+  right: 4vw;
+  border: none;
+  color: #7b7b7b;
+  cursor: pointer;
+  margin: 10px;
+  user-select: none;
+}
+
+.primary_modal_delete_button:hover {
+  color: #000;
+
+}
+
+
+.primary_modal_edit_button {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  font-size: 2.2vmin;
+  top: 1px;
+  right: 2vw;
+  border: none;
+  color: #7b7b7b;
+  cursor: pointer;
+  margin: 10px;
+  user-select: none;
+}
+
+.primary_modal_edit_button:hover {
+  color: #000;
+
+}
+
+.primary_modal_button_outer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  gap: 5.5vh;
+}
+
+.primary_modal_button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5vh;
+  border-radius: 1.5vh;
+  background-color: #ffffff;
+  height: 9vh;
+  width: 55vw;
+  border: none;
+  cursor: pointer;
+}
+
+.edit_modal_button_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5vh;
+  border-radius: 1.5vh;
+  background-color: #ffffff;
+  height: 35vh;
+  width: 15vw;
+  cursor: pointer;
+}
+
+
+.primary_modal_button_container:hover,
+.edit_modal_button_container:hover {
+  background-color: #aaaaaae3;
+  transition: 600ms;
+}
+
+.material_icons_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #003a6c;
+  height: 100%;
+  width: 40%;
+}
+
+.edit_material_icons_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #003a6c;
+  height: 35%;
+  width: 30%;
+  margin-top: 5vh;
+}
+
+.material_icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 5vmin;
+  /* changed from 5rem */
+  color: #ffffff;
+}
+
+
+.primary_modal_button_container:hover .material_icons {
+  color: #aaaaaae3;
+  transition: 600ms;
+}
+
+.edit_modal_button_container:hover .material_icons {
+  color: #aaaaaae3;
+  transition: 600ms;
+}
+
+.primary_modal_button {
+  font-family: Verdana;
+  background-color: transparent;
+  color: #003a6c;
+  border: none;
+  font-size: 3vmin;
+  font-weight: 600;
+  cursor: pointer;
+  height: 100%;
+  width: 170%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  outline: none
+}
+
+
+/* Text container styles */
+.deleteMachineModalText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+/* Modal content styles */
+.deleteMachineModalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+}
+
+/* Modal title styles */
+.deleteMachineModalText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Button container styles */
+.deleteMachineButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button styles */
+.deleteMachineModalButton {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4b76e9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 16px;
+  width: 5.5vw;
+  height: 3vh;
+}
+
+.deleteMachineModalButton:last-child {
+  margin-right: 0;
+}
+
+.jaButton {
+  background-color: #4b76e9;
+}
+
+.nejButton {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.deleteMachineModalButton:hover {
+  background-color: #3454a1;
+}
+
+.nejButton:hover {
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.p-order-form-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-time-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.register-time-form-inner-container {
+  margin: 20px;
+  flex: 1;
+}
+
+.input-field-header {
+  font-size: 1.5vmin;
+  font-weight: bold;
+  margin-bottom: 0.75vmin;
+}
+
+.stop-registration {
+  font-size: 2.25vmin;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5vh;
+  margin-top: 2.2vh;
+}
+
+.p-order-form-outer-container {
+  width: 42vw;
+  height: 45vh;
+  overflow: auto;
+}
+
+.p-order-flex-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 29vh;
+}
+
+.text-input-field-register-time {
+  width: 175%;
+  height: 4vh;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.text-input-field-p-order {
+  width: 100%;
+  height: 4vh;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.p-order-button-outer-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.p-order-button-outer-container .p-order-form-inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-order-button {
+  width: 6vw;
+  height: 3vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #4b76e9;
+  color: #fff;
+  font-size: 2vmin;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+
+.select-porder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-p-order-input {
+  height: 39vh;
+}
+
+.custom-grid-static {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.custom-grid-static-delete {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.custom-grid-dynamic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  grid-row: span 2;
+  margin-top: 30px;
+}
+
+.custom-grid-static .two-rows {
+  grid-row: span 2;
+}
+
+.two-rows {
+  height: 100px;
+}
+
+
+.input-limited-width {
+  width: 20vw;
+}
+
+.p-order-dropdown {
+  width: 60%;
+}
+
+.p-order-date {
+  width: 55%;
+}
+
+
+.center-and-equal-size {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.select-p-order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  margin-top: -10px;
+}
+
+.checkmark-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark-wrapper {
+  margin-right: 5px;
+  /* Adjust this value as needed to add space between the checkmark and input field */
+  margin-bottom: 25px;
+}
+
+.equal-width-input {
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.time-inputbox {
+  width: 75%;
+}
+
+
+.add-stop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-stop-icon {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.add-stop-icon:hover {
+  color: #0056b3;
+}
+
+
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.edit_modal_button {
+  font-family: Verdana;
+  background-color: transparent;
+  color: #003a6c;
+  border: none;
+  font-size: 3vmin;
+  font-weight: 600;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  outline: none
+}
+
+.delete-registration-porder-card {
+  width: 35vw;
+}
+
+.Registrations {
+  margin-top: 4vh;
+  font-family: Verdana;
+  font-size: 2.5vmin;
+  font-weight: bold;
+  color: #000000;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
